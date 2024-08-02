@@ -1,7 +1,7 @@
 
 import populatelabels from './labels.js';
 import search from './search.js';
-import {getCookie} from './cookies.js';
+import { getQuery } from './localstorage.js';
 populatelabels();
 
 
@@ -18,7 +18,7 @@ populatelabels();
    
 
     (async()=> {
-       const query =  getCookie();
+       const query =  getQuery();
         await search(query);
     }
     )()

@@ -7,5 +7,5 @@ export function addCookie(query){
 export function getCookie() {
     const cookie = document.cookie;
         const query = cookie.split("=")[1];
-        return query
+        return query;
 }
